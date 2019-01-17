@@ -12,8 +12,6 @@ body, html {
 
 .hero-image {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("wallpaper.jpg");
-  filter: blur(8px);
-  -webkit-filter: blur(8px);
   height: 100%;
   background-position: center;
   background-repeat: no-repeat;
