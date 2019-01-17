@@ -7,12 +7,12 @@
 body, html {
   height: 100%;
   margin: 0;
-  font-family: Gothic, cursive, sans-serif;
+  font-family: Arial, serif;
 }
 
 .hero-image {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("wallpaper.jpg");
-  height: 50%;
+  height: 100%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -49,13 +49,15 @@ body, html {
 
 <div class="hero-image">
   <div class="hero-text">
-    <h1 style="font-size:50px">I am John Doe</h1>
-    <p>And I'm a Photographer</p>
+    <h1 style="font-size: 90px">Dani Briggs</h1>
+    <p style= "font-size: 20px">Welcome to my Website</p>
     <button>Hire me</button>
   </div>
 </div>
 
-<p>Page Content..</p>
+<h2 style="font-size: 35px">About Me</h2>
+
+<h2 style="font-size: 35px">My Goals</h2>
 
 </body>
 </html>
