@@ -1,0 +1,60 @@
+<html>
+    <head>
+      <head>
+        <title>Choose your Adventure</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+        body, html {
+          height: 100%;
+          margin: 0;
+          font-family: Arial, helvetica, serif;
+        }
+
+        .hero-image {
+          background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("zombie.jpg");
+          height: 100%;
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+          position: relative;
+        }
+
+        .hero-text {
+          text-align: center;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          color: red;
+        }
+
+
+        </style>
+
+        </head>
+        <body>
+        <script>
+            function theChoices()
+            {
+              document.write("Leave The House");
+              document.write(" ");
+              document.write("Stay Inside");
+            }
+        </script>
+
+    </head>
+      </body>
+    <body>
+        <div class="hero-image">
+          <div class="hero-text">
+            <h1 style="font-size: 85px">Zombie Troubles</h1>
+            <p style= "font-size: 25px">Today seemed like a normal day. You wake up get, get dressed and have your coffee. All of a sudden, you see a group of people outside your window. Looking closer, you find out that they're zombies! Do you stay inside your house and hope for rescue, or do you leave to save yourself?</p>
+
+            <script>
+                theChoices();
+            </script>
+          </div>
+        </div>
+
+    </body>
+</html>
