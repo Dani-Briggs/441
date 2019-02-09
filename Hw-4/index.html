@@ -37,7 +37,7 @@
               {
                 var theChoice = document.getElementById("choice").value;
                 var myQuestion = document.getElementById("question");
-                var imgOne = document.getElementById("image");
+
 
 
                 if(theChoice === "Stay")
@@ -47,7 +47,7 @@
 
 
                   myQuestion.innerHTML = "You decided to stay inside your house. Sadly, the zombie horde got bigger and were able to get inside your house. You get overwhelmed and become zombie food.";
-                  document.getElementById("deathone.jpg").style.display="none";
+                  document.img("deathone.jpg");
 
                 }
                 else if(theChoice === "Leave")
