@@ -43,10 +43,10 @@
                 {
                   document.getElementById("choice").style.display="none";
                   document.getElementById("btnSubmit").style.display="none";
-                  document.getElementById("mainImage").src = "deathone.jpg"
+
 
                   myQuestion.innerHTML = "You decided to stay inside your house. Sadly, the zombie horde got bigger and were able to get inside your house. You get overwhelmed and become zombie food.";
-
+                  document.getElementById("mainImage").src = "deathone.jpg"
                 }
                 else if(theChoice === "Leave")
                 {
@@ -69,7 +69,7 @@
             <p style= "font-size: 25px">Today seemed like a normal day. You wake up get, get dressed and have your coffee. All of a sudden, you see a group of people outside your window. Looking closer, you find out that they're zombies! Do you stay inside your house and hope for rescue, or do you leave to save yourself?</p>
 
 
-           <img src="deathone.jpeg" id="mainImage">
+           <img src="deathone.jpg" id="mainImage">
             <label id="lblName">Your Choice (Stay or Leave)</label><br>
             <input id="choice" type="text" value=" ">
             <button id="btnSubmit" onclick=choiceOne();>Submit</button>
