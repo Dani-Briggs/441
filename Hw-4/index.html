@@ -45,8 +45,8 @@
                   document.getElementById("choice").style.display="none";
                   document.getElementById("btnSubmit").style.display="none";
 
-                  document.getElementById("choice2").style.display="none";
-                  document.getElementById("btnSubmit2").style.display="none";
+                  document.getElementById("choice2").style.display="block";
+                  document.getElementById("btnSubmit2").style.display="block";
 
                   myQuestion.innerHTML = "You decided to stay inside your house. Sadly, the zombie horde got bigger and were able to get inside your house. You get overwhelmed and become zombie food.";
 
@@ -65,11 +65,6 @@
               {
                 var saveJoin = document.getElementById("choice2").value;
                 var myQuestion = document.getElementById("question");
-                document.getElementById("choice2").style.display="none";
-                document.getElementById("btnSubmit2").style.display="none";
-
-
-
 
                 if(saveJoin === "Save")
                 {
@@ -102,11 +97,11 @@
 
 
             <label id="lblName">Your Choice (Stay or Leave)</label><br>
-            <input id="choice" type="text" size="30" >
+            <input id="choice" type="text">
             <button id="btnSubmit" onclick=choiceOne();>Submit</button>
 
            <label id="lblName" style="display:none">Your Choice (Save or Join) </label><br>
-            <input id="choice2" type="text" size="30" style="display:none">
+            <input id="choice2" type="text"  style="display:none">
             <button id="btnSubmit2" onclick="choiceTwo();" style="display:none" >Submit</button>
 
           </div>
