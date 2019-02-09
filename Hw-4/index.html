@@ -1,6 +1,6 @@
 <html>
     <head>
-      <head>
+
         <title>Choose your Adventure</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <style>
@@ -30,7 +30,7 @@
 
 
         </style>
-        </head>
+
 
           <script>
               function choiceOne()
@@ -41,6 +41,9 @@
 
                 if(choiceOne === "Stay")
                 {
+                  document.getElementById("choice").style.display="none";
+                  document.getElementById("btnSubmit").style.display="none";
+                  
                   myQuestion.innerHTML = "You decided to stay inside your house";
 
                 }
