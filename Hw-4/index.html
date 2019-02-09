@@ -42,11 +42,7 @@
 
                 if(theChoice === "Stay")
                 {
-                  document.getElementById("choice").style.display="none";
-                  document.getElementById("btnSubmit").style.display="none";
 
-                  document.getElementById("choice2").style.display="block";
-                  document.getElementById("btnSubmit2").style.display="block";
 
                   myQuestion.innerHTML = "You decided to stay inside your house. Sadly, the zombie horde got bigger and were able to get inside your house. You get overwhelmed and become zombie food.";
 
@@ -54,6 +50,12 @@
                 }
                 else if(theChoice === "Leave")
                 {
+                  document.getElementById("choice").style.display="none";
+                  document.getElementById("btnSubmit").style.display="none";
+
+                  document.getElementById("choice2").style.display="block";
+                  document.getElementById("btnSubmit2").style.display="block";
+                  
                   myQuestion.innerHTML = "You decided to leave your house. Your car is at the mechanic so, you have to travel on foot. While you're running from the zombies, You hear a cry for help. You see a man fighting some zombies with a knife, but it looks like he needs help. You also see something else. It's a group of people with baseball bats in a D.I.Y armored truck. The group is waving you over to join with them for a quick escape. So, do you try to help the man or join the group? ";
 
 
