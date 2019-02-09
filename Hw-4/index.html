@@ -45,9 +45,9 @@
                   document.getElementById("choice").style.display="none";
                   document.getElementById("btnSubmit").style.display="none";
 
-
+                  document.getElementById("mainImage").src = "deathone.jpg"
                   myQuestion.innerHTML = "You decided to stay inside your house. Sadly, the zombie horde got bigger and were able to get inside your house. You get overwhelmed and become zombie food.";
-                  document.image("deathone.jpg");
+
 
                 }
                 else if(theChoice === "Leave")
@@ -63,6 +63,7 @@
     </head>
     <body>
         <div class="hero-image">
+          <img src="zombie.jpg" id="mainImage">
           <div class="hero-text">
             <div id="question">
 
