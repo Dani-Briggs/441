@@ -70,13 +70,41 @@
 
                 if(saveJoin === "Save")
                 {
+                  document.getElementById("choice2").style.display="none";
+                  document.getElementById("btnSubmit2").style.display="none";
+                  document.getElementById("lblName2").style.display="none";
 
+                  document.getElementById("choice3").style.display="block";
+                  document.getElementById("btnSubmit3").style.display="block";
+                  document.getElementById("lblName3").style.display="block";
 
                   myQuestion.innerHTML = "You decided to save the man. He sees you and tells you he dropped his gun. Thankfully, it's by your feet and you pick it up. Do you try to shoot the Zombies yourself or throw it at the man?";
 
 
                 }
                 else if(saveJoin === "Join")
+                {
+                  myQuestion.innerHTML = "You decided to join the group. Safety in numbers. The group clear away from you to get in the truck. You get in and the truck drives away. As things calm down, you are introduced to the leader of the group, who suspiciously looks like Jeffery Dean Morgan's character from The Walking Dead. This is going to be a wild ride.";
+
+
+                }
+
+              }
+
+              function choiceThree()
+              {
+                var theGun = document.getElementById("choice3").value;
+                var myQuestion = document.getElementById("question");
+
+                if(theGun === "Shoot")
+                {
+
+
+                  myQuestion.innerHTML = "You decided to save the man. He sees you and tells you he dropped his gun. Thankfully, it's by your feet and you pick it up. Do you try to shoot the Zombies yourself or throw it at the man?";
+
+
+                }
+                else if(theGun === "Throw")
                 {
                   myQuestion.innerHTML = "You decided to join the group. Safety in numbers. The group clear away from you to get in the truck. You get in and the truck drives away. As things calm down, you are introduced to the leader of the group, who suspiciously looks like Jeffery Dean Morgan's character from The Walking Dead. This is going to be a wild ride.";
 
@@ -105,6 +133,11 @@
             <label id="lblName2" style="display:none" >Your Choice (Save or Join) </label><br>
             <input id="choice2" type="text"  style="display:none">
             <button id="btnSubmit2" onclick=choiceTwo(); style="display:none" >Submit</button>
+
+            <label id="lblName3" style="display:none" >Your Choice (Shoot or Throw) </label><br>
+            <input id="choice3" type="text"  style="display:none">
+            <button id="btnSubmit3" onclick=choiceThree(); style="display:none" >Submit</button>
+
 
           </div>
             </div>
