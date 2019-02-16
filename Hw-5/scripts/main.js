@@ -27,7 +27,7 @@ function createRandomImageArray()
 {
     var actualImagePath = ["Images/bigby.png", "Images/Cole-macgrath.jpg", "Image/ellie.jpg", "Image/Geralt.jpg", "Image/skull.jpg"];
 
-    var count = [0,0,0,0,0];
+    var count = [0,0,];
 
     while(actualImages.length < 10)
     {
