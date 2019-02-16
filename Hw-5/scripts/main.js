@@ -25,16 +25,16 @@ function printBlanks(){
 
 function createRandomImageArray()
 {
-    var actualImagePath = ["Images/bigby.png", "Images/Cole-macgrath.jpg", "Image/ellie.jpg", "Image/Geralt.jpg", "Image/skull.jpg"];
+    var actualImagePath = ["Images/bigby.png", "Images/Cole-macgrath.jpg", "Images/ellie.jpg", "Images/Geralt.jpg", "Images/skull.jpg"];
 
-    var count = [0,0,];
+    var count = [0,0,0,0,0];
 
     while(actualImages.length < 10)
     {
 
       var randomNumber = Math.floor(Math.random() * actualImagePath.length)
 
-      if(count[randomNumber] < 2)
+      if(count[randomNumber] < 5)
       {
 
           actualImages.push(actualImagePath[randomNumber]);
