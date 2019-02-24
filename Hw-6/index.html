@@ -31,30 +31,7 @@
             </div>
         </div>
     </div>
-<script>
-function addToPlayer()
-{
-  var player = {"firstname":"", "lastname":"", "age":""};
-  var firstname = document.getElementById("txtFirstName").value;
-  player.firstname = firstname;
-  var lastname = document.getElementById("txtLastName").value;
-  player.lastname = lastname;
-  var age = document.getElementById("txtAge").value;
-  player.age = age;
-  localStorage.setItem("playerInfo", JSON.stringify(player));
-  window.location = "index.html";
 
-
-}
-
-function playerInfo()
-{
-  var playerInformation = localStorage.getItem("playerInfo");
-  player = JSON.parse(playerInformation);
-
-
-}
-</script>
 </body>
 
 </html>
