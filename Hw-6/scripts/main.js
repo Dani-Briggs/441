@@ -64,9 +64,8 @@ function flipImage(number)
   {
 
     secNumber = number;
-
     document.getElementById(imageTags[number]).src = actualImages[secNumber];
-  
+
 
   }
   else if (firstNumber < 0)
@@ -79,7 +78,7 @@ function flipImage(number)
   {
     setTimeout(imageDisappear, 900);
   }
-  else if(actualImages[secNumber] != actualImages[firstNumber] &&  firstNumber >= 0 && secNumber >= 0 )
+  else if(actualImages[secNumber] == actualImages[firstNumber] &&  firstNumber >= 0 && secNumber >= 0 )
   {
    firstNumber = -1;
    secNumber = -1;
