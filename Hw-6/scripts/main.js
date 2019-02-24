@@ -88,9 +88,7 @@ function flipImage(number)
   {
    firstNumber = -1;
    secNumber = -1;
-   thirdNumber = -1;
-   fourthNumber = -1;
-   fifthNumber = -1;
+
   }
 
 
@@ -106,7 +104,7 @@ function imageDisappear()
   document.getElementById(imageTags[fifthNumber]).src = blankImagePath;
   firstNumber = -1;
   secNumber = -1;
-  
+
 }
 
 function addToPlayer()
