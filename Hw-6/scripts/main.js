@@ -99,9 +99,7 @@ function imageDisappear()
 
   document.getElementById(imageTags[firstNumber]).src = blankImagePath;
   document.getElementById(imageTags[secNumber]).src = blankImagePath;
-  document.getElementById(imageTags[thirdNumber]).src = blankImagePath;
-  document.getElementById(imageTags[fourthNumber]).src = blankImagePath;
-  document.getElementById(imageTags[fifthNumber]).src = blankImagePath;
+
   firstNumber = -1;
   secNumber = -1;
 
