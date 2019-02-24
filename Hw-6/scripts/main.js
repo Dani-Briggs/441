@@ -14,9 +14,12 @@ var actualImages = new Array();
 
 var firstNumber = -1;
 var secNumber = -1;
+var thirdNumber = -1;
+var fourthNumber = -1;
+var fifthNumber = -1;
 
 //JSON
-var player = {"firstname":"","lastname":"",};
+var player = {"firstname": "","lastname": "","age": ""};
 
 
 //function for blank card
