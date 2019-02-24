@@ -12,12 +12,16 @@ var blankImagePath = "Images/back.jpg"
 // variable for the real Images
 var actualImages = new Array();
 
+var firstNumber = -1;
+var secNumber = -1;
+
 //JSON
 var player = {"firstname":"","lastname":"",};
 
 
 //function for blank card
-function printBlanks(){
+function printBlanks()
+{
 
     createRandomImageArray();
     for (var i = 0; i < imageTags.length; i++)
@@ -53,9 +57,40 @@ function createRandomImageArray()
 function flipImage(number)
 {
 
-  document.getElementById(imageTags[number]).src = actualImages[number];
+  if(firstNumber >= 0)
+  {
+
+    secNumber = number;
+    document.getElementById(imageTags[number]).src = actualImages[secNumber];
+
+  }
+  else if (firstNumber < 0)
+  {
+    firstNumber = number;
+    document.getElementById(imageTags[firstNumber]).src = actualImages[firstNumber];
+
+  }
+  if(actualImages[secNumber] != actualImages[firstNumber] && firstNumber >= 0 && secNumber >= 0)
+  {
+    setTimeout(imageDisappear, 900);
+  }
+  else if(actualImages[secNumber] != actualImages[firstNumber] && firstNumber >= 0 && secNumber >= 0)
+  {
+   firstNumber = -1;
+   secNumber = -1;
+  }
+
+
 }
 
+function imageDisappear()
+{
+
+  document.getElementById(imageTags[firstNumber]).src = blankImagePath;
+  document.getElementById(imageTags[secNumber]).src = blankImagePath;
+  firstNumber = -1;
+  secNumber = -1;
+}
 
 function addToPlayer()
 {
@@ -69,6 +104,8 @@ function addToPlayer()
 
 function playerInfo()
 {
+  var playerInformation = localStorage.getItem("playerInfo");
+  player = JSON.parse(playerInformation);
 
 
 
