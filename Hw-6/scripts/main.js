@@ -18,9 +18,6 @@ var thirdNumber = -1;
 var fourthNumber = -1;
 var fifthNumber = -1;
 
-//JSON
-var player = {"firstname": "","lastname": "","age": ""};
-
 
 //function for blank card
 function printBlanks()
@@ -96,29 +93,5 @@ function imageDisappear()
 
   firstNumber = -1;
   secNumber = -1;
-
-}
-
-function addToPlayer()
-{
-  var firstname = document.getElementById("txtFirstName").value;
-  player.firstname = firstname;
-  var lastname = document.getElementById("txtLastName").value;
-  player.lastname = lastname;
-  var age = document.getElementById("txtAge").value;
-  player.age = age;
-  localStorage.setItem("playerInfo", JSON.stringify(player));
-  window.location = "index.html";
-
-
-}
-
-function playerInfo()
-{
-  var playerInformation = localStorage.getItem("playerInfo");
-  player = JSON.parse(playerInformation);
-  window.location = "indexinfo.html" + playerInformation;
-
-
 
 }
