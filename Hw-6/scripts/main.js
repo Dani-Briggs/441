@@ -64,7 +64,14 @@ function flipImage(number)
   {
 
     secNumber = number;
+    thirdNumber = number;
+    fourthNumber = number;
+    fifthNumber = number;
     document.getElementById(imageTags[number]).src = actualImages[secNumber];
+    document.getElementById(imageTags[number]).src = actualImages[thirdNumber];
+    document.getElementById(imageTags[number]).src = actualImages[fourthNumber];
+    document.getElementById(imageTags[number]).src = actualImages[fifthNumber];
+
 
   }
   else if (firstNumber < 0)
@@ -91,8 +98,15 @@ function imageDisappear()
 
   document.getElementById(imageTags[firstNumber]).src = blankImagePath;
   document.getElementById(imageTags[secNumber]).src = blankImagePath;
+  document.getElementById(imageTags[thirdNumber]).src = blankImagePath;
+  document.getElementById(imageTags[fourthNumber]).src = blankImagePath;
+  document.getElementById(imageTags[fifthNumber]).src = blankImagePath;
   firstNumber = -1;
   secNumber = -1;
+  thirdNumber = -1;
+  fourthNumber = -1;
+  fifthNumber = -1;
+
 }
 
 function addToPlayer()
