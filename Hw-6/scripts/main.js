@@ -103,6 +103,10 @@ function addToPlayer()
 {
   var firstname = document.getElementById("txtFirstName").value;
   player.firstname = firstname;
+  var lastname = document.getElementById("txtLastName").value;
+  player.lastname = lastname;
+  var age = document.getElementById("txtAge").value;
+  player.age = age;
   localStorage.setItem("playerInfo", JSON.stringify(player));
   window.location = "index.html";
 
