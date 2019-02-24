@@ -80,11 +80,11 @@ function flipImage(number)
     document.getElementById(imageTags[firstNumber]).src = actualImages[firstNumber];
 
   }
-  if(actualImages[secNumber] != actualImages[firstNumber] && actualImages[secNumber] != actualImages[thirdNumber] && actualImages[thirdNumber] != actualImages[fourthNumber] && actualImages[fourthNumber] != actualImages[fifthNumber] && firstNumber >= 0 && secNumber >= 0 && thirdNumber >= 0 && fourthNumber >= 0 && fifthNumber >= 0)
+  if(actualImages[secNumber] != actualImages[firstNumber] && actualImages[thirdNumber] != actualImages[fourthNumber] && actualImages[fourthNumber] != actualImages[fifthNumber] && firstNumber >= 0 && secNumber >= 0 && thirdNumber >= 0 && fourthNumber >= 0 && fifthNumber >= 0)
   {
     setTimeout(imageDisappear, 900);
   }
-  else if(actualImages[secNumber] != actualImages[firstNumber]&& actualImages[secNumber] != actualImages[thirdNumber] && actualImages[thirdNumber] != actualImages[fourthNumber] && actualImages[fourthNumber] != actualImages[fifthNumber]  && firstNumber >= 0 && secNumber >= 0 && thirdNumber >= 0 && fourthNumber >= 0 && fifthNumber >= 0)
+  else if(actualImages[secNumber] != actualImages[firstNumber] && actualImages[thirdNumber] != actualImages[fourthNumber] && actualImages[fourthNumber] != actualImages[fifthNumber] &&  firstNumber >= 0 && secNumber >= 0 && thirdNumber >= 0 && fourthNumber >= 0 && fifthNumber >= 0)
   {
    firstNumber = -1;
    secNumber = -1;
