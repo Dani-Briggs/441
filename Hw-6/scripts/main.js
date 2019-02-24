@@ -117,6 +117,7 @@ function playerInfo()
 {
   var playerInformation = localStorage.getItem("playerInfo");
   player = JSON.parse(playerInformation);
+  window.location = "indexinfo.html" + playerInformation;
 
 
 
