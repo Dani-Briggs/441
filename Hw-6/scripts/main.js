@@ -64,14 +64,9 @@ function flipImage(number)
   {
 
     secNumber = number;
-    thirdNumber = number;
-    fourthNumber = number;
-    fifthNumber = number;
-    document.getElementById(imageTags[number]).src = actualImages[secNumber];
-    document.getElementById(imageTags[number]).src = actualImages[thirdNumber];
-    document.getElementById(imageTags[number]).src = actualImages[fourthNumber];
-    document.getElementById(imageTags[number]).src = actualImages[fifthNumber];
 
+    document.getElementById(imageTags[number]).src = actualImages[secNumber];
+  
 
   }
   else if (firstNumber < 0)
