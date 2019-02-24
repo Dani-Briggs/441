@@ -1,8 +1,9 @@
 /*
 Author: Dani Briggs
-Date: Feb 16, 2019
+Date: Feb 24, 2019
 Purpose: matching game
 */
+
 
 //create array for imageTags
 var imageTags = ["image1", "image2","image3", "image4", "image5", "image6", "image7", "image8", "image9","image10"]
@@ -10,6 +11,10 @@ var imageTags = ["image1", "image2","image3", "image4", "image5", "image6", "ima
 var blankImagePath = "Images/back.jpg"
 // variable for the real Images
 var actualImages = new Array();
+
+//JSON
+var player = {"firstname":"","lastname":"",};
+
 
 //function for blank card
 function printBlanks(){
@@ -49,4 +54,22 @@ function flipImage(number)
 {
 
   document.getElementById(imageTags[number]).src = actualImages[number];
+}
+
+
+function addToPlayer()
+{
+  var firstname = document.getElementById("txtFirstName").value;
+  player.firstname = firstname;
+  localStorage.setItem("playerInfo", JSON.stringify(player));
+  window.location = "index.html";
+
+
+}
+
+function playerInfo()
+{
+
+
+
 }
