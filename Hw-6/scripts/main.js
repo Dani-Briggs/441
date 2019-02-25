@@ -20,6 +20,8 @@ var fifthNumber = -1;
 
 var player = {"firstname":"", "lastname":"", "age":"", "score": ""};
 
+
+var nextPage = 9;
 //function for blank card
 function printBlanks()
 {
@@ -85,6 +87,13 @@ function flipImage(number)
    secNumber = -1;
    score++;
    return score;
+   nextPage--;
+
+   if(nextPage === 0)
+   {
+
+     setTimeout(lastPage, 2000);
+   }
 
   }
 
