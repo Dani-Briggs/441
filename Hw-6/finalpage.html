@@ -9,23 +9,12 @@
     </link>
 </head>
 
-<body onload="playerInfo(); lastPage(); loadPage();">
+<body onload="playerInfo();  loadPage();">
     <h1> Final Score </h1>
-
-
-<script>
-
-function loadPage()
-{
-
-  document.getElementById("txtFirstName").innerHTML = playerInfo.firstname + " " + playerInfo.lastname;
-  document.getElementById("txtAge").innerHTML = "Age: " + playerInfo.age
-  document.getElementById("score").innerHTML = "Final Score: " + playerInfo.score;
-}
+    <div style="text-align: font-size: 30px" id= "txtFirstName"></div>
 
 
 
-</script>
 </body>
 
 </html>
