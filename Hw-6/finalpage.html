@@ -13,17 +13,15 @@
     <h1> Final Score </h1>
 
 
-     <div>
+<script>
 
-                <div><input  id= "txtFirstName"></div>
+function loadPage()
+{
 
-                <div><input  id= "txtLastName"></div>
-
-                <div><input  id= "txtAge"></div>
-      </div>
-
-
-<script
+  document.getElementById("txtFirstName").innerHTML = playerInfo.firstname + " " + playerInfo.lastname;
+  document.getElementById("txtAge").innerHTML = "Age: " + playerInfo.age
+  document.getElementById("score").innerHTML = "Final Score: " + playerInfo.score;
+}
 
   type="text/javascript" src="scripts/main.js">
 
