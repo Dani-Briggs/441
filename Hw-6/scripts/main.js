@@ -114,8 +114,6 @@ function addToPlayer()
   var age = document.getElementById("txtAge").value;
   player.age = age;
 
-  var finalScore = score
-
   localStorage.setItem("playerInfo", JSON.stringify(player));
   window.location = "index.html";
 
@@ -131,6 +129,15 @@ function playerInfo()
 }
 
 function lastPage()
+{
+
+  playerInfo.score = score
+
+  localStorage.setItem("playerInfo", JSON.stringify(player));
+  window.location = "finalpage.html";
+}
+
+function loadPage()
 {
 
 document.getElementById("txtFirstName").innerHTML = playerInfo.firstname + " " + playerInfo.lastname;
