@@ -4,7 +4,7 @@ Date: Feb 24, 2019
 Purpose: matching game
 */
 
-
+var score = 0;
 //create array for imageTags
 var imageTags = ["image1", "image2","image3", "image4", "image5", "image6", "image7", "image8", "image9","image10"]
 // variable for blank image
@@ -18,7 +18,7 @@ var thirdNumber = -1;
 var fourthNumber = -1;
 var fifthNumber = -1;
 
-var player = {"firstname":"", "lastname":"", "age":""};
+var player = {"firstname":"", "lastname":"", "age":"", "score": ""};
 
 //function for blank card
 function printBlanks()
@@ -75,11 +75,16 @@ function flipImage(number)
   if(actualImages[secNumber] != actualImages[firstNumber] && firstNumber >= 0 && secNumber >= 0 )
   {
     setTimeout(imageDisappear, 900);
+
+    score++;
+    return score;
   }
   else if(actualImages[secNumber] == actualImages[firstNumber] &&  firstNumber >= 0 && secNumber >= 0 )
   {
    firstNumber = -1;
    secNumber = -1;
+   score++;
+   return score;
 
   }
 
@@ -102,10 +107,15 @@ function addToPlayer()
 
   var firstname = document.getElementById("txtFirstName").value;
   player.firstname = firstname;
+
   var lastname = document.getElementById("txtLastName").value;
   player.lastname = lastname;
+
   var age = document.getElementById("txtAge").value;
   player.age = age;
+
+  var finalScore = score
+
   localStorage.setItem("playerInfo", JSON.stringify(player));
   window.location = "index.html";
 
@@ -118,4 +128,12 @@ function playerInfo()
   player = JSON.parse(playerInformation);
 
 
+}
+
+function lastPage()
+{
+
+document.getElementById("txtFirstName").innerHTML = playerInfo.firstname + " " + playerInfo.lastname;
+document.getElementById("txtAge").innerHTML = "Age: " + playerInfo.age
+document.getElementById("score").innerHTML = "Final Score: " + playerInfo.score;
 }
