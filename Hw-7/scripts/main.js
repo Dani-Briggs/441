@@ -21,7 +21,7 @@ class ViewClass
 
 
 }
-function initialInfo()
+function initialArray()
 {
   var myViewFinder = new ViewFinder("pug");
   myViewFinderArray.push(myViewFinder);
