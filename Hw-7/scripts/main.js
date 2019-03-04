@@ -29,7 +29,7 @@ function initialInfo()
 }
 function accessInfo()
 {
- var myViewFinder = new ViewFinder("pug");
+
  //console.log(myViewFinder.theTitle);
  document.getElementById("title").innerHTML = myViewFinderArray[0].theTitle
 
