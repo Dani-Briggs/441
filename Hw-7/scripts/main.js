@@ -12,6 +12,10 @@ class ViewClass
       this.title = title;
 
     }
+    toString()
+    {
+      return "Title: " + this.title;
+    }
 
     get theTitle()
     {
@@ -23,7 +27,7 @@ class ViewClass
 }
 function initialArray()
 {
-  var myViewFinder = new ViewFinder("pug");
+  var myViewFinder = new ViewFinder("vegas");
   myViewFinderArray.push(myViewFinder);
 
 }
@@ -31,6 +35,6 @@ function accessInfo()
 {
 
  //console.log(myViewFinder.theTitle);
- document.getElementById("title").innerHTML = myViewFinderArray[0].theTitle
+ document.getElementById("title").innerHTML = myViewFinderArray[0].toString
 
 }
