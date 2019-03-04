@@ -1,5 +1,7 @@
 <html>
+        <head>
         <title>Viewmaster</title>
+        <script src = "scripts/main.js"></script>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <style>
         body, html {
@@ -25,12 +27,10 @@
           transform: translate(-50%, -50%);
           color: red;
         }
-
-
         </style>
+      </head>
 
 
-          <script src = "scripts/main.js"></script>
 
 
     <body onload="initialArray();">
@@ -38,8 +38,12 @@
       <h1 style="font-size: 85px">Concert Viewmaster</h1>
       <p style= "font-size: 25px">This Viewmaster contains some pictures from concerts I've been to.</p>
 
-    <div id= "title"></div>
-    <button id= "btnSubmit" onclick="accessInfo();">Next</button>
+        <div id= "title"></div>
+        <div id= "author"></div>
+        <div id= "year"></div>
+        <div id= "description"></div>
+        <div id= "image"></div>
+        <button id= "btnSubmit" onclick="accessInfo();">Next</button>
 
         <div class="hero-image"></div>
           <div class="hero-text"></div>
