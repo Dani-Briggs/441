@@ -1,5 +1,5 @@
 <html>
-        <title>Choose your Adventure</title>
+        <title>Viewmaster</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <style>
         body, html {
@@ -9,7 +9,7 @@
         }
 
         .hero-image {
-          background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("zombie.jpg");
+          background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("background.png");
           height: 100%;
           background-position: center;
           background-repeat: no-repeat;
@@ -31,116 +31,17 @@
 
 
           <script>
-              function choiceOne()
-              {
-                var theChoice = document.getElementById("choice").value;
-                var myQuestion = document.getElementById("question");
 
-
-
-                if(theChoice === "Stay")
-                {
-
-
-                  myQuestion.innerHTML = "You decided to stay inside your house. Sadly, the zombie horde got bigger and were able to get inside your house. You get overwhelmed and become zombie food.";
-
-
-                }
-                else if(theChoice === "Leave")
-                {
-                  document.getElementById("choice").style.display="none";
-                  document.getElementById("btnSubmit").style.display="none";
-                  document.getElementById("lblName").style.display="none";
-
-                  document.getElementById("choice2").style.display="block";
-                  document.getElementById("btnSubmit2").style.display="block";
-                  document.getElementById("lblName2").style.display="block";
-
-                  myQuestion.innerHTML = "You decided to leave your house. Your car is at the mechanic so, you have to travel on foot. While you're running from the zombies, You hear a cry for help. You see a man fighting some zombies with a knife, but it looks like he needs help. You also see something else. It's a group of people with baseball bats in a D.I.Y armored truck. The group is waving you over to join with them for a quick escape. So, do you try to help the man or join the group? ";
-
-
-                }
-
-              }
-
-              function choiceTwo()
-              {
-                var saveJoin = document.getElementById("choice2").value;
-                var myQuestion = document.getElementById("question");
-
-                if(saveJoin === "Save")
-                {
-                  document.getElementById("choice2").style.display="none";
-                  document.getElementById("btnSubmit2").style.display="none";
-                  document.getElementById("lblName2").style.display="none";
-
-                  document.getElementById("choice3").style.display="block";
-                  document.getElementById("btnSubmit3").style.display="block";
-                  document.getElementById("lblName3").style.display="block";
-
-                  myQuestion.innerHTML = "You decided to save the man. He sees you and tells you he dropped his gun. Thankfully, it's by your feet and you pick it up. Do you try to shoot the Zombies yourself or throw it at the man?";
-
-
-                }
-                else if(saveJoin === "Join")
-                {
-                  myQuestion.innerHTML = "You decided to join the group. Safety in numbers. The group clear away from you to get in the truck. You get in and the truck drives away. As things calm down, you are introduced to the leader of the group, who suspiciously looks like Jeffery Dean Morgan's character from The Walking Dead. This is going to be a wild ride.";
-
-
-                }
-
-              }
-
-              function choiceThree()
-              {
-                var theGun = document.getElementById("choice3").value;
-                var myQuestion = document.getElementById("question");
-
-                if(theGun === "Shoot")
-                {
-
-
-                  myQuestion.innerHTML = "You decided to shoot the zombies yourself. Sadly, you accidentally shot the man and you get overrun by the zombies. You are Dead.";
-
-
-                }
-                else if(theGun === "Throw")
-                {
-                  myQuestion.innerHTML = "You decided to throw the gun at the man. He catches it and shoots the remaining zombies. You meet the man and he looks like Leon Kenndy from Resident Evil. You're not sure if it's Leon from the Resident Evil 2 remake or the one from Resident Evil 4. You're thankful to have him on your side regardless. You two set off to figure happening.";
-
-
-                }
-
-              }
           </script>
 
 
     <body>
         <div class="hero-image">
           <div class="hero-text">
-            <div id="question">
 
 
-            <h1 style="font-size: 85px">Zombie Troubles</h1>
-            <p style= "font-size: 25px">Today seemed like a normal day. You wake up get, get dressed and have your coffee. All of a sudden, you see a group of people outside your window. Looking closer, you find out that they're zombies! Do you stay inside your house and hope for rescue, or do you leave to save yourself?</p>
-
-              </div>
-
-            <label id="lblName">Your Choice (Stay or Leave)</label><br>
-            <input id="choice" type="text">
-            <button id="btnSubmit" onclick=choiceOne();>Submit</button>
-
-            <label id="lblName2" style="display:none" >Your Choice (Save or Join) </label><br>
-            <input id="choice2" type="text"  style="display:none">
-            <button id="btnSubmit2" onclick=choiceTwo(); style="display:none" >Submit</button>
-
-            <label id="lblName3" style="display:none" >Your Choice (Shoot or Throw) </label><br>
-            <input id="choice3" type="text"  style="display:none">
-            <button id="btnSubmit3" onclick=choiceThree(); style="display:none" >Submit</button>
-
-
-          </div>
-            </div>
+            <h1 style="font-size: 85px">Concert Viewmaster</h1>
+            <p style= "font-size: 25px">This Viewmaster contains some pictures from concerts I've been to.</p>
 
 
         </body>
