@@ -3,7 +3,7 @@ Author: Dani Briggs
 Date: March 4, 2019
 Purpose: Viewmaster
 */
-
+var myViewFinderArray = new Array();
 
 class ViewClass
 {
@@ -21,10 +21,16 @@ class ViewClass
 
 
 }
+function initialInfo()
+{
+  var myViewFinder = new ViewFinder("pug");
+  myViewFinderArray.push(myViewFinder);
 
+}
 function accessInfo()
 {
  var myViewFinder = new ViewFinder("pug");
- console.log(myViewFinder.theTitle);
+ //console.log(myViewFinder.theTitle);
+ document.getElementById("title").innerHTML = myViewFinderArray[0].theTitle
 
 }
