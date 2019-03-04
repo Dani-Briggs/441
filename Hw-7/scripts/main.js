@@ -25,5 +25,6 @@ class ViewClass
 function accessInfo()
 {
  var myViewFinder = new ViewFinder("pug");
+ console.log(myViewFinder.theTitle);
 
 }
