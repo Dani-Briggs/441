@@ -22,6 +22,15 @@ class ViewClass
        return this.title;
 
     }
+    get imageAuthor()
+    {
+
+    }
+
+  get imageYear()
+    {
+
+    }
 
 
 }
