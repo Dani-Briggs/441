@@ -50,16 +50,25 @@ class ViewClass
     }
 
 }
-function initialArray()
+function initializeArray()
 {
-  var myViewFinder = new ViewFinder("Muse in Vegas");
+  //title, author, year, description, image
+  var myViewFinder = new ViewFinder("Muse in Vegas", "Dani Briggs", "2013", "This concert was at the Mandalay Bay convention center and was my first concert.","images/vegasConcert.jpg");
   myViewFinderArray.push(myViewFinder);
+
+  var myViewFinderOne = new ViewFinder("Muse in Portland", "Dani Briggs", "2015", "This concert was at the Moda center and was my second time seeing Muse.","images/portConcert.jpeg");
+  myViewFinderArrayOne.push(myViewFinderOne);
+
+  var myViewFinderTwo = new ViewFinder("Muse in Salt Lake City", "Dani Briggs", "2013", "This concert was at the USANA Amphitheatre and was my third time seeing Muse.","images/saltConcert.JPG");
+  myViewFinderArrayTwo.push(myViewFinderTwo);
+
 
 }
 function accessInfo()
 {
 
  //console.log(myViewFinder.theTitle);
- document.getElementById("title").innerHTML = myViewFinderArray[0].toString
+ document.getElementById("title").innerHTML = myViewFinderArray[2].toString
+  document.getElementById("image").innerHTML = myViewFinderArray[2].toString
 
 }
