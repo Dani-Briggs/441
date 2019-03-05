@@ -66,7 +66,7 @@ function initializeArray()
 }
 function accessInfo()
 {
-var randomNum = Math.floor(Math.random(2));
+  var randomNum = Math.floor(Math.random(2));
 
  document.getElementById("title").innerHTML = myViewFinderArray[randomNum].toString();
  document.getElementById("author").innerHTML = myViewFinderArray[randomNum].toString();
