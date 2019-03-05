@@ -69,6 +69,9 @@ function accessInfo()
 var randomNum = Math.floor(Math.random(2));
 
  document.getElementById("title").innerHTML = myViewFinderArray[randomNum].toString();
+ document.getElementById("author").innerHTML = myViewFinderArray[randomNum].toString();
+ document.getElementById("year").innerHTML = myViewFinderArray[randomNum].toString();
+ document.getElementById("description").innerHTML = myViewFinderArray[randomNum].toString();
  document.getElementById("image").src = myViewFinderArray[randomNum].toString();
 
 }
