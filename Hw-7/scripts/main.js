@@ -59,16 +59,16 @@ function initializeArray()
   var myViewFinderOne = new ViewFinder("Muse in Portland", "Dani Briggs", "2015", "This concert was at the Moda center and was my second time seeing Muse.","images/portConcert.jpeg");
   myViewFinderArrayOne.push(myViewFinderOne);
 
-  var myViewFinderTwo = new ViewFinder("Muse in Salt Lake City", "Dani Briggs", "2013", "This concert was at the USANA Amphitheatre and was my third time seeing Muse.","images/saltConcert.JPG");
+  var myViewFinderTwo = new ViewFinder("Muse in Salt Lake City", "Dani Briggs", "2017", "This concert was at the USANA Amphitheatre and was my third time seeing Muse.","images/saltConcert.JPG");
   myViewFinderArrayTwo.push(myViewFinderTwo);
 
 
 }
 function accessInfo()
 {
+var randomNum = Math.random();
 
- //console.log(myViewFinder.theTitle);
  document.getElementById("title").innerHTML = myViewFinderArray[2].toString
-  document.getElementById("image").innerHTML = myViewFinderArray[2].toString
+ document.getElementById("image").src = myViewFinderArray[2].toString
 
 }
