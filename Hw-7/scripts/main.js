@@ -66,9 +66,9 @@ function initializeArray()
 }
 function accessInfo()
 {
-var randomNum = Math.random();
+var randomNum = Math.floor(Math.random(2));
 
- document.getElementById("title").innerHTML = myViewFinderArray[2].toString();
- document.getElementById("image").src = myViewFinderArray[2].toString();
+ document.getElementById("title").innerHTML = myViewFinderArray[randomNum].toString();
+ document.getElementById("image").src = myViewFinderArray[randomNum].toString();
 
 }
