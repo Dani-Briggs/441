@@ -7,9 +7,14 @@ Purpose: jquery
 $(document).ready(function(){
 
   $("button").click(function(){
-    $("#square").animate({left:'250px'}).animate({top:'450px'}).animate({left:'0px'}).animate({top:'100px'})
+   setInterval(moveSquare; 1000);  
     $("#port").fadeOut().fadeIn()
   });
 
 
 });
+
+function moveSquare(){
+    $("#square").animate({left:'250px'}).animate({top:'450px'}).animate({left:'0px'}).animate({top:'100px'})
+
+}
