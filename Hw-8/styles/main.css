@@ -11,5 +11,7 @@
 
 
 #grad{
+  height: 5000px;
+  width: 5000px;
   background-image: radial-gradient(blue, teal, white);
 }
