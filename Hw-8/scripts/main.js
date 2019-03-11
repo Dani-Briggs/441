@@ -3,7 +3,7 @@ Author: Dani Briggs
 Date: March 11, 2019
 Purpose: jquery
 */
-$(function()){
+$(function(){
 
 });
 $(document).ready(function(){
