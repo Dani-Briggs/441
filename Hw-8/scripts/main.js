@@ -9,7 +9,7 @@ $(document).ready(function(){
   $("button").click(function(){
    setInterval(moveSquare(), 1000);
     $("#port").fadeOut().fadeIn()
-    $("#textone").fadeOut()
+    $("#textone").fadeOut().fadeIn()
   });
 
 
