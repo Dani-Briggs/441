@@ -17,7 +17,7 @@ $(document).ready(function(){
 });
 
 function moveSquare(){
-    $("#square").animate({left:'250px'}).animate({top:'450px'}).animate({left:'0px'}).animate({top:'100px'}).fadeOut()
+    $("#square").animate({left:'250px'}).animate({top:'450px'}).animate({left:'0px'}).animate({top:'100px'}).fadeToggle()
 
 }
 
