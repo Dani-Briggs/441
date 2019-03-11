@@ -9,6 +9,18 @@
 
 }
 
+#dot {
+  height: 75px;
+  width: 75px;
+  background-color: yellow;
+  border-radius: 50%;
+  display: inline-block;
+  position: absolute;
+  left: 300;
+  top: 500;
+}
+
+
 
 body{
   background-color: blue;

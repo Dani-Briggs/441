@@ -9,6 +9,7 @@ $(document).ready(function(){
   $("button").click(function(){
 
     $("#textone").fadeOut().fadeIn()
+      $("#dot").fadeOut().fadeIn()
      setInterval(moveSquare(), 1000);
   });
 
