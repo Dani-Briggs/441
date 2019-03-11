@@ -8,7 +8,7 @@ $(document).ready(function(){
 
   $("button").click(function(){
     $("#square").animate({left:'250px'}).animate({top:'450px'}).animate({left:'0px'}).animate({top:'100px'})
-    $("#port").fadeOut()
+    $("#port").fadeOut().fadeIn()
   });
 
 
