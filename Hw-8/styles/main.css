@@ -11,5 +11,5 @@
 
 
 #grad{
-  background-image: radial-gradient(blue, teal);
+  background-image: radial-gradient(blue, teal, white);
 }
