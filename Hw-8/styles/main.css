@@ -10,6 +10,6 @@
 }
 
 
-body{
-  background-color:blue;
+#grad{
+  background-image: radial-gradient(blue, teal);
 }
