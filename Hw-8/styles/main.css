@@ -1,3 +1,15 @@
-body{
 
+#square {
+  width:200px;
+  height:200px;
+  background: pink;
+  position: absolute;
+  left: 0;
+  right: 100;
+
+}
+
+
+body{
+  background-image: radial-gradient("blue");
 }
