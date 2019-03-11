@@ -7,7 +7,7 @@ Purpose: jquery
 $(document).ready(function(){
 
   $("button").click(function(){
-    $("#square").animate({left:'250px'}).animate({top:'450px'}).animate({left:'450px'}).animate({top:'300px'})
+    $("#square").animate({left:'250px'}).animate({top:'450px'}).animate({left:'0px'}).animate({top:'100px'})
   });
 
 
