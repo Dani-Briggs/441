@@ -9,7 +9,10 @@ $(document).ready(function(){
   $("button").click(function(){
 
     $("#textone").fadeOut().fadeIn()
+    $("#texttwo").animate({left:'250px'}).animate({top:'450px'}).animate({left:'0px'}).animate({top:'100px'})
+
       $("#dot").fadeOut().fadeIn()
+      imageFade();
      setInterval(moveSquare(), 1000);
   });
 
