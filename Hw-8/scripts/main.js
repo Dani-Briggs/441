@@ -9,9 +9,9 @@ $(document).ready(function(){
   $("button").click(function(){
 
     $("#textone").fadeOut().fadeIn()
-    $("#texttwo").slideToggle().animate({left: '250px',  height: '150px',  width: '150px'});
+    $("#texttwo").slideToggle()
 
-      $("#dot").fadeOut().fadeIn().slideToggle()
+      $("#dot").fadeOut().fadeIn().slideUp().slideDown()
       imageFade();
      setInterval(moveSquare(), 1000);
   });
