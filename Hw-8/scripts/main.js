@@ -22,7 +22,7 @@ function moveSquare(){
 }
 
 function imageFade(){
-  $("port").fadeOut().fadeIn()
-  $("salt").fadeOut().fadeIn()
-  $("vegas").fadeOut().fadeIn()
+  $("#port").fadeOut().fadeIn()
+  $("#salt").fadeOut().fadeIn()
+  $("#vegas").fadeOut().fadeIn()
 }
