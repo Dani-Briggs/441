@@ -12,7 +12,7 @@ $(document).ready(function(){
     $("#texttwo").slideToggle()
 
       $("#dot").fadeOut().fadeIn().slideUp().slideDown()
-      imageFade()
+    setTimeout(imageFade(),1000)
      setInterval(moveSquare(), 1000);
   });
 
@@ -25,7 +25,7 @@ function moveSquare(){
 }
 
 function imageFade(){
-  setTimeout($("#port").fadeOut().fadeIn(), 1000)
+  $("#port").fadeOut().fadeIn()
   $("#salt").fadeOut().fadeIn()
   $("#vegas").fadeOut().fadeIn()
 }
