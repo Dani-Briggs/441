@@ -12,7 +12,7 @@ $(document).ready(function(){
     $("#texttwo").slideToggle()
 
       $("#dot").fadeOut().fadeIn().slideUp().slideDown()
-      imageFade();
+      setTimer(imageFade(), 100)
      setInterval(moveSquare(), 1000);
   });
 
