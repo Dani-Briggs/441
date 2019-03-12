@@ -9,7 +9,7 @@ $(document).ready(function(){
   $("button").click(function(){
 
     $("#textone").fadeOut().fadeIn()
-    $("#texttwo").slideToggle()
+    $("#texttwo").slideToggle().animate({left: '250px',  height: '150px',  width: '150px'});
 
       $("#dot").fadeOut().fadeIn().slideToggle()
       imageFade();
