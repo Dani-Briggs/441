@@ -25,7 +25,7 @@ function moveSquare(){
 }
 
 function imageFade(){
-  $("#port").fadeOut().fadeIn()
+  setTimeout($("#port").fadeOut().fadeIn(), 1000)
   $("#salt").fadeOut().fadeIn()
   $("#vegas").fadeOut().fadeIn()
 }
