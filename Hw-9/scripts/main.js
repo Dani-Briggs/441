@@ -39,7 +39,6 @@ $(document).ready(function(){
   (function($){
     $.fn.bluey = function () {
         this.css("background-color", "blue");
-        this.css("webkit-text-stroke-width" 1, "webkit-text-stroke-color","black";);
         this.css("color", "yellow");
         this.css("font-size", 44);
         return this;
@@ -49,5 +48,4 @@ $(document).ready(function(){
         $("button").click(function () {
             $("#pokemonData").bluey().fadeOut("slow").fadeIn("slow");
         });
-
     });
