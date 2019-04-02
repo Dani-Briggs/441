@@ -39,6 +39,7 @@ $(document).ready(function(){
   (function($){
     $.fn.bluey = function () {
         this.css("background-color", "blue");
+        this.css("background-color", "red");
         this.css("color", "yellow");
         this.css("font-size", 44);
         return this;
