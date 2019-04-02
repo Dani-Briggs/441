@@ -9,7 +9,7 @@ $(document).ready(function(){
   $("button").click(function(){
     $.getJSON("data/pokedex.json", function(result){
      $.each(result, function(i, field){
-       $("pokemonData").append(field + " ");
+       $("#pokemonData").append(field + " ");
      });
    });
  });
