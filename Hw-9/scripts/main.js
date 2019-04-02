@@ -8,7 +8,6 @@ $(document).ready(function(){
 
   $("button").click(function(){
 
-
     $("#pokemonData").load("data/pokedex.json", function(result){
         var poke = JSON.parse(result);
         $("#pokemonData").html("Id:"
