@@ -7,14 +7,8 @@ Purpose: JSON and AJAX
 $(document).ready(function(){
 
   $("button").click(function(){
-    $.getJSON("data/pokedex.json", function(result){
-     $.each(result, function(i, field){
-       $("#pokemonData").append(field + " ");
-     });
-   });
- });
-});
-/*
+
+
     $("#pokemonData").load("data/pokedex.json", function(result){
         var poke = JSON.parse(result);
         $("#pokemonData").html("Id:"
@@ -41,4 +35,3 @@ $(document).ready(function(){
       });
     });
   });
-*/
