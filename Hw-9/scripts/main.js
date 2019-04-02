@@ -7,7 +7,7 @@ Purpose: JSON and AJAX
 $(document).ready(function(){
 
   $("button").click(function(){
-    $.getJSON("pokedex.json", function(result){
+    $.getJSON("data/pokedex.json", function(result){
      $.each(result, function(i, field){
        $("div").append(field + " ");
      });
