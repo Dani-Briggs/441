@@ -34,3 +34,19 @@ $(document).ready(function(){
       });
     });
   });
+
+
+  (function($){
+    $.fn.bluey = function () {
+        this.css("background-color", "blue");
+        this.css("color", "yellow");
+        this.css("font-size", 44);
+        return this;
+    };
+    }(jQuery));
+    $(function () {
+        $("button").click(function () {
+            $("#pokemonData").bluey().fadeOut("slow").fadeIn("slow");
+        });
+
+    });
