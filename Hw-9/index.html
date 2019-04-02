@@ -8,7 +8,7 @@
     <script>
 $(document).ready(function(){
   $("button").click(function(){
-    $.getJSON("pokedex.json", function(result){
+    $.getJSON("pokedex.js", function(result){
       $.each(result, function(i, field){
         $("div").append(field + " ");
       });
