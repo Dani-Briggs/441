@@ -37,7 +37,7 @@ $(document).ready(function(){
 
 
   (function($){
-    $.fn.bluey = function () {
+    $.fn.pokeFont = function () {
         this.css("background-color", "blue");
         this.css("color", "yellow");
         this.css("font-size", 44);
@@ -46,6 +46,6 @@ $(document).ready(function(){
     }(jQuery));
     $(function () {
         $("button").click(function () {
-            $("#pokemonData").bluey().fadeOut("slow").fadeIn("slow");
+            $("#pokemonData").pokeFont().fadeOut("slow").fadeIn("slow");
         });
     });
