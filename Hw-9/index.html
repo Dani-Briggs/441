@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
   <head>
     <title>Who's That Pokemon?</title>
@@ -5,28 +6,13 @@
     <script src = "scripts/main.js"></script>
     <link href="styles/main.css" type="text/css" rel="stylesheet">
 
-    <script>
-$(document).ready(function(){
-  $("button").click(function(){
-    $.getJSON("pokedex.json", function(result){
-      $.each(result, function(i, field){
-        $("div").append(field + " ");
-      });
-    });
-  });
-});
-</script>
   </head>
-
-
-
-
 
   <body>
 
-    <button>Get Pokemon Data</button>
+    <button id="btnSubmit">Get Pokemon Data</button>
 
-    <div></div>
+    <div id="pokemonData"></div>
 
   </body>
 
