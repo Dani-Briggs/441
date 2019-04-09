@@ -14,25 +14,35 @@
    var canvas = document.getElementById("myCanvas");
    var ctx = canvas.getContext("2d");
    ctx.fillStyle = "red";
-   var x = 50;  var y = 50;
+   var x = 50;
+   var y = 50;
+   var canvasX = canvas.width/2;
+   var canvasY = canvas.height-30;
+   var dx = 2;
+   var dy = -2;
+   var radius = 175;
    drawSquare();
    drawCircle();
-   setInterval(update, 1000/60);
-   function update()
-        {
 
-            drawCircle();
-        }
    function drawCircle()
         {
-          ctx.clearRect(0,0,800,600);
-          ctx.fillRect(x, y, 20, 20);
           ctx.beginPath();
-          var radius = 175;
-          ctx.arc(255, 255, radius, 0, math.PI * 2, false);
-          ctx.closePath();
+          ctx.arc(255, 255, radius, 0, math.PI * 2);
           ctx.fillStyle = "teal"
+          ctx.fill();
+          ctx.closePath();
+
         }
+
+   function animate()
+   {
+     ctx.clearRect(0, 0, canvas.width, canvas.height);
+     drawCircle();
+     canvasX += dx;
+     canvasY += dy;
+
+   }
+   setInterval(draw, 10);
    function drawSquare()
        {
            ctx.clearRect(0,0,800,600);
