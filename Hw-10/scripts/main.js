@@ -5,7 +5,7 @@ Purpose: HTML5
 */
 var canvas = document.getElementById("myCanvas");
 var ctx = canvas.getContext("2d");
-ctx.fillStyle = "#0000FF";
+ctx.fillStyle = "red";
 var x = 50;  var y = 50;
 drawSquare();
 function drawSquare()
