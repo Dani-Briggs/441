@@ -28,10 +28,10 @@ function getKey(event){
   if(actualLetter == "s"){
     moveDown();
   }
-  if(actualLetter == "d"){
+  if(actualLetter == "a"){
     moveRight();
   }
-  if(actualLetter == "a"){
+  if(actualLetter == "d"){
     moveLeft();
   }
   drawSquare();
@@ -42,9 +42,9 @@ function moveUp(){
 function moveDown(){
   y+=10
 }
-function moveRight(){
+function moveLeft(){
   x-=10
 }
-function moveLeft(){
+function moveRight(){
   x+=10
 }
