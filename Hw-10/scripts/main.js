@@ -29,10 +29,10 @@ function getKey(event){
     moveDown();
   }
   if(actualLetter == "a"){
-    moveRight();
+    moveLeft();
   }
   if(actualLetter == "d"){
-    moveLeft();
+    moveRight();
   }
   drawSquare();
 }
