@@ -11,14 +11,18 @@ var square1, square2;
 var direction;
 var question;
 var squareArray = [];
-$(document).ready(function()){
+$(document).ready(function()
+{
   setup();
-
-  $(this).keypress(function(event)){
+  $(this).keypress(function(event)
+  {
     getKey(event);
-  }
+  });
+});
 
-}
+
+
+
 
 
 function setup(){
@@ -32,9 +36,10 @@ function setup(){
     for(var i = 0; i < data.squares.length; i++){
       squareArray.push(new Square(data.squares.[i].x, data.squares[i].y, data.squares[i].h, data.squares[i].w, data.squares[i].color));
     }
+     drawSquare();
   })
+}
 
-  drawSquare();
 
   function getKey(event){
 
@@ -73,7 +78,7 @@ function setup(){
       }
 
     }
-
+     drawSquare();
   }
 
 
@@ -91,23 +96,22 @@ function setup(){
   }
 
  function drawSquare(){
-   ctx.clear(0,0,900,700);
-   ctx.fillStyle = square1.mainColor;
-   ctx.fillRect(square1.x, square1.y, square1.width, square1.height);
-   ctx.fillStyle = square2.mainColor;
-   ctx.fillRect(square2.x, square2.y, square2.width, square2.height);
-   for(var i = 0; i < squareArray.length; i++){
-     ctx.fillStyle = squareArray[i].mainColor;
-     ctx.fillRect(squareArray[i].x, squareArray[i].y, squareArray[i].width, squareArray[i].height)
-   }
- }
+  ctx.clear(0,0,900,700);
+  ctx.fillStyle = square1.mainColor;
+  ctx.fillRect(square1.x, square1.y, square1.width, square1.height);
+  ctx.fillStyle = square2.mainColor;
+  ctx.fillRect(square2.x, square2.y, square2.width, square2.height);
+  for(var i = 0; i < squareArray.length; i++){
+    ctx.fillStyle = squareArray[i].mainColor;
+    ctx.fillRect(squareArray[i].x, squareArray[i].y, squareArray[i].width, squareArray[i].height)
+  }
+}
 
-}
-function hasCollided(object1, object2){
-  return!(
-    ((object1.y + object1.height) <(object2.y)) ||
-    (object1.y > (object2.y + object2.height)) ||
-    ((object1.x + object1.width) < object2.x) ||
-    (object1.x > (object2.x + object2.width))
-  );
-}
+
+
+function hasCollided(object1, object2){return!(
+  ((object1.y + object1.height) <(object2.y)) ||
+  (object1.y > (object2.y + object2.height)) ||
+  ((object1.x + object1.width) < object2.x) ||
+  (object1.x > (object2.x + object2.width))
+);}
