@@ -11,6 +11,7 @@ var square1, square2;
 var direction;
 var question;
 var squareArray = [];
+var lives = 3;
 $(document).ready(function()
 {
   setup();
@@ -33,7 +34,8 @@ function setup(){
   square1 = new Square(100, 100, 50, 50, "blue");
   square2 = new Square(400, 500, 150, 150, "green");
    $.getJSON("data/info.json", function(data){
-    for(var i = 0; i < data.squares.length; i++){
+    for(var i = 0; i < data.squares.length; i++)
+    {
       squareArray.push(new Square(data.squares.[i].x, data.squares[i].y, data.squares[i].h, data.squares[i].w, data.squares[i].color));
     }
      drawSquare();
@@ -63,7 +65,16 @@ function setup(){
     }
 
     var test = hasCollided(square1, square2);
-    if(test){
+    var test2 = false;
+    for(var i = 0; i < squareArray.length; i++){
+      test2 = hasCollided(square1, squareArray[i]);
+      if(test2 == true){
+        break;
+      }
+
+    }
+    if(test || test2){
+      lives--;
       if(direction == "left"){
         moveRight();
       }
@@ -105,6 +116,8 @@ function setup(){
     ctx.fillStyle = squareArray[i].mainColor;
     ctx.fillRect(squareArray[i].x, squareArray[i].y, squareArray[i].width, squareArray[i].height)
   }
+  ctx.font = "30px Arial";
+  ctx.fillText("Lives: " + lives, 10, 55);
 }
 
 
