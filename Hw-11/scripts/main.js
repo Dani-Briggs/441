@@ -31,12 +31,12 @@ function setup(){
   canvas = document.getElementById("myCanvas");
   ctx = canvas.getContext("2d");
 
-  square1 = new Square(100, 100, 50, 50, "blue");
-  square2 = new Square(400, 500, 150, 150, "green");
-   $.getJSON("data/info.json", function(data){
+  square1 = new Square(100, 100, 50, 50, "red");
+  square2 = new Square(400, 500, 150, 150, "pink");
+  $.getJSON("data/info.json", function(data){
     for(var i = 0; i < data.squares.length; i++)
     {
-      squareArray.push(new Square(data.squares.[i].x, data.squares[i].y, data.squares[i].h, data.squares[i].w, data.squares[i].color));
+      squareArray.push(new Square(data.squares[i].x, data.squares[i].y, data.squares[i].h, data.squares[i].w, data.squares[i].color));
     }
      drawSquare();
   })
@@ -116,7 +116,7 @@ function setup(){
     ctx.fillStyle = squareArray[i].mainColor;
     ctx.fillRect(squareArray[i].x, squareArray[i].y, squareArray[i].width, squareArray[i].height)
   }
-  ctx.font = "30px Arial";
+  ctx.font = "30px Helvetica";
   ctx.fillText("Lives: " + lives, 10, 55);
 }
 
