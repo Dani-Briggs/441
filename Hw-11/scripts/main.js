@@ -28,11 +28,11 @@ function setup(){
 
   square1 = new Square(100, 100, 50, 50, "blue");
   square2 = new Square(400, 500, 150, 150, "green");
-  /* $.getJSON("data/info.json", function(data){
+   $.getJSON("data/info.json", function(data){
     for(var i = 0; i < data.squares.length; i++){
       squareArray.push(new Square(data.squares.[i].x,data.squares[i].y, data.squares[i]))
     }
-  })*/
+  })
 
   drawSquare();
 
@@ -42,18 +42,40 @@ function setup(){
     var actualLetter = String.fromCharCode(char);
     if(actualLetter == "w"){
     moveUp();
+    direction = "up"
     }
     if(actualLetter == "s"){
     moveDown();
+    direction = "down"
     }
     if(actualLetter == "a"){
     moveLeft();
+    direction = "left"
     }
     if(actualLetter == "d"){
     moveRight();
+    direction = "right"
+    }
+
+    var test = hasCollided(square1, square2);
+    if(test){
+      if(direction == "left"){
+        moveRight();
+      }
+      else if(direction == "right"){
+        moveLeft();
+      }
+      else if(direction == "up"){
+        moveDown();
+      }
+      else if(direction == "down"){
+        moveUp();
+      }
+
     }
 
   }
+
 
   function moveUp(){
       square1.y-=10
@@ -80,5 +102,12 @@ function setup(){
    }
  }
 
-
+}
+function hasCollided(object1, object2){
+  return!(
+    ((object1.y + object1.height) <(object2.y)) ||
+    (object1.y > (object2.y + object2.height)) ||
+    ((object1.x + object1.width) < object2.x) ||
+    (object1.x > (object2.x + object2.width))
+  );
 }
