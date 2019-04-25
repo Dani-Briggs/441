@@ -1,0 +1,2 @@
+## 441 readme HW-10
+This assignment was very tough. I was able to get the square to move with WASD, but when I tried to add another shape it wouldn't work any more so, that's why I have that part commented out. The other shape wouldn't show up either. I couldn't figure out how to make another shape using classes, so I tried to find an alternative, but I still couldn't get it to show up. Which means, I couldn't get collision going either. Time was running out (again my fault) and I needed to turn in something.
