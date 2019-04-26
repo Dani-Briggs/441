@@ -6,7 +6,7 @@ Purpose: Final
 var song;
 var fft;
 var w;
-
+/* Keep song stuff, change rect to Draw rect */
 
 function setup(){
   frameRate(34);
