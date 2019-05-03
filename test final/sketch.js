@@ -1,14 +1,13 @@
 var song;
 var fft;
 var w;
-
-var canvas = document.getElementById("myCanvas");
-var ctx = canvas.getContext("2d");
-ctx.fillStyle = "red";
+var squares = [];
+var ctx;
+albumPic()
 
 function setup(){
   frameRate(34);
-  createCanvas(300, 300);
+  createCanvas(1540, 300);
   song = loadSound("8-bit_sing_for_ab.mp3", loaded);
   let x = width/2;
   let y = height;
@@ -24,17 +23,27 @@ function loaded(){
 
 
 function draw(){
-  background(200);
+  background(235);
   var spectrum = fft.analyze();
   noStroke();
-  fill(230);
+  fill(200);
   for (var i = 0; i < spectrum.length; i++){
     var amp = spectrum[i];
     var y = map(amp, 0, 255, height, 0);
     rect(i*w, y, w - 2, height - y);
 
   }
+}
+function albumPic(){
 
+  squares.push(drawStuff(75, 75, "red", 10, 10));
+  squares.push(drawStuff(75, 75, "yellow", 50, 60));
+  squares.push(drawStuff(75, 75, "blue", 10, 220));
+  for ( i=0;i<squares.length;i++){
+      ctx.fillStyle = squares[i].color;
+      ctx.fillRect(squares[i].left,squares[i].top,squares[i].width,squares[i].height);
+}
+/*
 ///*Album one - Absolution*
 //***Shadow person one***
  push();
@@ -228,4 +237,4 @@ rect(1090, 640, 220, 20);
 pop();
 
 pop();
-}
+*/
