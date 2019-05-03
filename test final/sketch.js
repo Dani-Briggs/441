@@ -2,10 +2,13 @@ var song;
 var fft;
 var w;
 
+var canvas = document.getElementById("myCanvas");
+var ctx = canvas.getContext("2d");
+ctx.fillStyle = "red";
 
 function setup(){
   frameRate(34);
-  createCanvas(windowWidth, windowHeight);
+  createCanvas(300, 300);
   song = loadSound("8-bit_sing_for_ab.mp3", loaded);
   let x = width/2;
   let y = height;
