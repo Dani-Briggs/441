@@ -1,18 +1,225 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Final For Web Tech</title>
         <meta name="viewport" width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0>
         <script type="text/javascript" src="libs/jquery-3.3.1.js"></script>
-        <script src="p5_lib/p5.sound.min.js"></script>
         <script src="p5_lib/p5.min.js"></script>
         <script src="p5_lib/p5.dom.min.js"></script>
-        <script src="main.js"></script>
-
+        <script src="p5_lib/p5.sound.min.js"></script>
+        <script src="scripts/main.js"></script>
 
     </head>
     <body>
-      <canvas id="myCanvas" height="700" width="1540" ><canvas>
+      <canvas id="myCanvas" height="400" width="1540" ><canvas>
+        <script>
+        var c = document.getElementById("myCanvas");
+        var ctx = c.getContext("2d");
+        ctx.fillStyle = "#EBEBEB";
+        ctx.fillRect(0, 0, 1540, 400);
 
+        ctx.scale(0.9, 0.9);
+        ctx.fillStyle = "#010000";
+        ctx.fillRect(950, 180, 15, 15);
+        ctx.fillStyle = "#010000";
+        ctx.fillRect(950, 165, 60, 15);
+        ctx.fillStyle = "#FEE0BD";
+        ctx.fillRect(965, 180, 45, 45);
+        ctx.fillStyle = "#222222";
+        ctx.fillRect(945, 225, 85, 20);
+
+        ctx.fillStyle = "#222222";
+        ctx.fillRect(925, 245, 20, 20);
+        ctx.fillStyle = "#222222";
+        ctx.fillRect(905, 265, 20, 40);
+        ctx.fillStyle = "#FEE0BD";
+        ctx.fillRect(905, 305, 20, 20);
+
+        ctx.fillStyle = "#222222";
+        ctx.fillRect(1030, 245, 20, 20);
+        ctx.fillStyle = "#222222";
+        ctx.fillRect(1050, 265, 20, 40);
+        ctx.fillStyle = "#FEE0BD";
+        ctx.fillRect(1050, 305, 20, 20);
+
+        ctx.fillStyle = "#222222";
+        ctx.fillRect(965, 240, 45, 85);
+
+        ctx.fillStyle = "#222222";
+        ctx.fillRect(1010, 325, 20, 60);
+        ctx.fillStyle = "#222222";
+        ctx.fillRect(945, 325, 20, 60);
+        ctx.fillStyle = "#010000";
+        ctx.fillRect(905, 385, 125, 20);
+
+        ctx.fillStyle = "#010000";
+        ctx.fillRect(905, 325, 20, 10);
+        ctx.fillStyle = "#010000";
+        ctx.fillRect(905, 335, 10, 20);
+
+
+
+        ctx.fillStyle = "#000038";
+        ctx.fillRect(500, 20, 20, 80);
+        ctx.fillStyle = "#000038";
+        ctx.fillRect(540, 20, 20, 80);
+        ctx.fillStyle = "#000038";
+        ctx.fillRect(520, 80, 20, 20);
+        ctx.fillStyle = "#000038";
+        ctx.fillRect(520, 100, 40, 60);
+        ctx.fillStyle = "#000038";
+        ctx.fillRect(540, 140, 40, 40);
+
+        ctx.fillStyle = "#000038";
+        ctx.fillRect(520, 180, 20, 20);
+        ctx.fillStyle = "#000038";
+        ctx.fillRect(500, 200, 20, 20);
+        ctx.fillStyle = "#000038";
+        ctx.fillRect(480, 220, 20, 20);
+
+        ctx.fillStyle = "#000038";
+        ctx.fillRect(580, 120, 20, 20);
+        ctx.fillStyle = "#000038";
+        ctx.fillRect(600, 100, 20, 20);
+        ctx.fillStyle = "#000038";
+        ctx.fillRect(620, 80, 20, 20);
+
+        ctx.fillStyle = "#000038";
+        ctx.fillRect(580, 180, 20, 20);
+
+        ctx.scale(0.5, 0.5);
+
+        ctx.fillStyle = "#000038";
+        ctx.fillRect(500, 20, 20, 80);
+        ctx.fillStyle = "#000038";
+        ctx.fillRect(540, 20, 20, 80);
+        ctx.fillStyle = "#000038";
+        ctx.fillRect(520, 80, 20, 20);
+        ctx.fillStyle = "#000038";
+        ctx.fillRect(520, 100, 40, 60);
+        ctx.fillStyle = "#000038";
+        ctx.fillRect(540, 140, 40, 40);
+
+        ctx.fillStyle = "#000038";
+        ctx.fillRect(520, 180, 20, 20);
+        ctx.fillStyle = "#000038";
+        ctx.fillRect(500, 200, 20, 20);
+        ctx.fillStyle = "#000038";
+        ctx.fillRect(480, 220, 20, 20);
+
+        ctx.fillStyle = "#000038";
+        ctx.fillRect(580, 120, 20, 20);
+        ctx.fillStyle = "#000038";
+        ctx.fillRect(600, 100, 20, 20);
+        ctx.fillStyle = "#000038";
+        ctx.fillRect(620, 80, 20, 20);
+
+        ctx.fillStyle = "#000038";
+        ctx.fillRect(580, 180, 20, 20);
+
+        ctx.beginPath();
+        ctx.translate(1200, 80);
+        ctx.scale(0.7, 0.7);
+        ctx.closePath();
+
+
+        ctx.fillStyle = "#000038";
+        ctx.fillRect(500, 20, 20, 80);
+        ctx.fillStyle = "#000038";
+        ctx.fillRect(540, 20, 20, 80);
+        ctx.fillStyle = "#000038";
+        ctx.fillRect(520, 80, 20, 20);
+        ctx.fillStyle = "#000038";
+        ctx.fillRect(520, 100, 40, 60);
+        ctx.fillStyle = "#000038";
+        ctx.fillRect(540, 140, 40, 40);
+
+        ctx.fillStyle = "#000038";
+        ctx.fillRect(520, 180, 20, 20);
+        ctx.fillStyle = "#000038";
+        ctx.fillRect(500, 200, 20, 20);
+        ctx.fillStyle = "#000038";
+        ctx.fillRect(480, 220, 20, 20);
+
+        ctx.fillStyle = "#000038";
+        ctx.fillRect(580, 120, 20, 20);
+        ctx.fillStyle = "#000038";
+        ctx.fillRect(600, 100, 20, 20);
+        ctx.fillStyle = "#000038";
+        ctx.fillRect(620, 80, 20, 20);
+
+        ctx.fillStyle = "#000038";
+        ctx.fillRect(580, 180, 20, 20);
+
+        ctx.beginPath();
+        ctx.translate(1700, 600);
+        ctx.scale(0.6, 0.6);
+        ctx.closePath();
+
+
+        ctx.fillStyle = "#000038";
+        ctx.fillRect(500, 20, 20, 80);
+        ctx.fillStyle = "#000038";
+        ctx.fillRect(540, 20, 20, 80);
+        ctx.fillStyle = "#000038";
+        ctx.fillRect(520, 80, 20, 20);
+        ctx.fillStyle = "#000038";
+        ctx.fillRect(520, 100, 40, 60);
+        ctx.fillStyle = "#000038";
+        ctx.fillRect(540, 140, 40, 40);
+
+        ctx.fillStyle = "#000038";
+        ctx.fillRect(520, 180, 20, 20);
+        ctx.fillStyle = "#000038";
+        ctx.fillRect(500, 200, 20, 20);
+        ctx.fillStyle = "#000038";
+        ctx.fillRect(480, 220, 20, 20);
+
+        ctx.fillStyle = "#000038";
+        ctx.fillRect(580, 120, 20, 20);
+        ctx.fillStyle = "#000038";
+        ctx.fillRect(600, 100, 20, 20);
+        ctx.fillStyle = "#000038";
+        ctx.fillRect(620, 80, 20, 20);
+
+        ctx.fillStyle = "#000038";
+        ctx.fillRect(580, 180, 20, 20);
+
+        ctx.beginPath();
+        ctx.translate(10, 10);
+        ctx.scale(2, 2);
+        ctx.closePath();
+
+
+        ctx.fillStyle = "#000038";
+        ctx.fillRect(500, 20, 20, 80);
+        ctx.fillStyle = "#000038";
+        ctx.fillRect(540, 20, 20, 80);
+        ctx.fillStyle = "#000038";
+        ctx.fillRect(520, 80, 20, 20);
+        ctx.fillStyle = "#000038";
+        ctx.fillRect(520, 100, 40, 60);
+        ctx.fillStyle = "#000038";
+        ctx.fillRect(540, 140, 40, 40);
+
+        ctx.fillStyle = "#000038";
+        ctx.fillRect(520, 180, 20, 20);
+        ctx.fillStyle = "#000038";
+        ctx.fillRect(500, 200, 20, 20);
+        ctx.fillStyle = "#000038";
+        ctx.fillRect(480, 220, 20, 20);
+
+        ctx.fillStyle = "#000038";
+        ctx.fillRect(580, 120, 20, 20);
+        ctx.fillStyle = "#000038";
+        ctx.fillRect(600, 100, 20, 20);
+        ctx.fillStyle = "#000038";
+        ctx.fillRect(620, 80, 20, 20);
+
+        ctx.fillStyle = "#000038";
+        ctx.fillRect(580, 180, 20, 20);
+
+
+
+        </script>
     </body>
 </html>

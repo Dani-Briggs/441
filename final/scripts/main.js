@@ -1,6 +1,7 @@
+
 /*
 Author: Dani Briggs
-Date: April 25, 2019
+Date: May 3, 2019
 Purpose: Final
 */
 var song;
@@ -37,5 +38,3 @@ function draw(){
 
   }
 }
-
-///*Album one - Absolution*
