@@ -8,6 +8,15 @@
   top: 100;
 
 }
+#squareTwo {
+  width:200px;
+  height:200px;
+  background: red;
+  position: absolute;
+  left: 0;
+  top: 100;
+
+}
 
 #dot {
   height: 75px;

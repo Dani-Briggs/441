@@ -21,7 +21,7 @@ $(document).ready(function(){
 
 function moveSquare(){
     $("#square").animate({left:'250px'}).animate({top:'450px'}).animate({left:'0px'}).animate({top:'100px'}).fadeToggle()
-
+    $("#squareTwo").animate({left:'250px'}).animate({top:'250px'}).animate({left:'0px'}).animate({top:'100px'}).fadeToggle()
 }
 
 function imageFade(){
